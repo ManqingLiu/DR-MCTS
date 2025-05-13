@@ -59,7 +59,6 @@ MCTS_DR/
 │   ├── figure1.py           # Generate Figure 1 (SmallGo game example)
 │   ├── figure2.py           # Generate Figure 2 (DR-MCTS performance)
 │   └── figure4.py           # Generate Figure 4 (IS-MCTS performance)
-├── DR-MCTS_paper.pdf        # Research paper
 ├── requirement.txt          # Python dependencies
 └── README.md               # This file
 ```
@@ -71,9 +70,6 @@ MCTS_DR/
 To reproduce the experimental results from the paper:
 
 ```python
-# Run comprehensive experiments
-python experiments/experiments.py
-
 # Generate specific figures
 python experiments/figure1.py  # SmallGo game visualization
 python experiments/figure2.py  # DR-MCTS vs MCTS comparison
@@ -104,14 +100,6 @@ action, value = mcts_dr.mcts_search(game, num_simulations)
 
 # Make the move
 game.make_move(action)
-```
-
-### Running on HPC Clusters
-
-For running on HPC clusters (e.g., SLURM), use the provided job script:
-
-```bash
-sbatch myjob.sh
 ```
 
 ## Algorithms Implemented
